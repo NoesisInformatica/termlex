@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Termlex by NoesisInformatica</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Termlex</h1>
+        <p>Simplifying SNOMED CT implementation</p>
+
+        <p class="view"><a href="https://github.com/NoesisInformatica/termlex">View the Project on GitHub <small>NoesisInformatica/termlex</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/NoesisInformatica/termlex/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/NoesisInformatica/termlex/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/NoesisInformatica/termlex">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="termlex" class="anchor" href="#termlex" aria-hidden="true"><span class="octicon octicon-link"></span></a>Termlex</h2>
+
+<p>Termlex is a modular, service oriented API for SNOMED CT</p>
+
+<h4>
+<a id="authors" class="anchor" href="#authors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors</h4>
+
+<ul>
+<li>Jay Kola, Noesis Informatica</li>
+</ul>
+
+<h4>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h4>
+
+<ol>
+<li>Extract the <code>Termlex.zip</code> to a folder where you have read and write permissions.</li>
+<li>Verify the entries in <code>snomed-db.properties</code> to match your MySQL database that contains SNOMED CT data.</li>
+<li>Set database connection properties in <code>termlogic-server.properties</code> for Termlex to store data. You can also edit this file to change the port that Termlex runs on.</li>
+<li>Start Termlex using the <code>run.sh</code> or <code>run.bat</code> files in the folder.</li>
+</ol>
+
+<h3>
+<a id="configuration-folder" class="anchor" href="#configuration-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration Folder</h3>
+
+<p>Termlex services can be configured using property files. Default values for the services are included in the jar 
+files. However, it is possible to override the default values by providing property files for each of the services. 
+Termlex has a default configuration folder called <code>config</code> located in the folder it is extracted.
+The following is a list of property files that can be used to configure services:</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">File name</th>
+<th align="center">Description</th>
+<th align="left">Termlex deployment location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">snomed-db.properties</td>
+<td align="center">Settings to configure the database that contains SNOMED CT data</td>
+<td align="left">/opt/termlex/config</td>
+</tr>
+<tr>
+<td align="left">termlogic-server.properties</td>
+<td align="center">Settings to configure the port number and database details used by Termlex</td>
+<td align="left">/opt/termlex/config</td>
+</tr>
+<tr>
+<td align="left">obj-snomed-db.properties</td>
+<td align="center">Settings to configure database that stores Termlex managed local extensions</td>
+<td align="left">/opt/termlex/config</td>
+</tr>
+<tr>
+<td align="left">refset-db.properties</td>
+<td align="center">Settings to configure the database that contains refset data</td>
+<td align="left">/opt/termlex/config</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="looking-for-source-code" class="anchor" href="#looking-for-source-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Looking for source code?</h3>
+
+<p>If you are using Termlex, you can access the source code at: <a href="https://gitlab.com/noesisinformatica/termlex">https://gitlab.com/noesisinformatica/termlex</a></p>
+
+<h3>
+<a id="want-to-learn-how-it-can-be-used" class="anchor" href="#want-to-learn-how-it-can-be-used" aria-hidden="true"><span class="octicon octicon-link"></span></a>Want to learn how it can be used?</h3>
+
+<p>If you'd like to see what Termlex can do, then you can check out <a href="https://snolex.com">Snolex</a> the SNOMED CT browser and refset manager powered by Termlex.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Interested in using Termlex or having trouble with Termlex? You can <a href="https://noesisinformatica.com/contact/">contact support</a> and we’ll help you sort it out.</p>
+
+<p>Happy Hacking!</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/NoesisInformatica">NoesisInformatica</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-29598083-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
